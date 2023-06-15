@@ -1,0 +1,171 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap");
+
+/* Body Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+#profil {
+  margin-top: 80px;
+}
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem;
+  border-bottom: 1px solid #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+.navbar .navbar-nav a {
+  display: inline-block;
+  margin: 0 1rem;
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: #cd9d9d;
+}
+
+.navbar .navbar-nav a:hover {
+  color: #cd9d9d;
+}
+
+.navbar .navbar-nav a::after {
+  content: " ";
+  border-bottom: 0.2rem solid #f2f2f2;
+  padding-bottom: 0.5rem;
+  display: block;
+  transform: scaleX(0);
+  transition: 0.3s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+}
+
+main {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+form div {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+input[type="file"],
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #555;
+}
+
+.profile-picture {
+  position: relative;
+  align-items: center;
+}
+
+.profile-preview {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ccc;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+  main {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}

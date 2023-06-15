@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website Saya - Profil</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- Feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">BMKG.</a>
+
+      <div class="navbar-nav">
+        <a href="#dashboard">Dashboard</a>
+        <a href="#kursus">Kursus</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="search"><i data-feather="user"></i></a>
+      </div>
+    </nav>
+
+    <main>
+      <section id="profil">
+        <h2>Profil</h2>
+        <form action="save_profile.html">
+          <div class="profile-picture">
+            <label for="foto">Foto:</label>
+            <input type="file" id="foto" name="foto" accept="image/*" required />
+            <div class="profile-preview"></div>
+          </div>
+          <div>
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" required />
+          </div>
+          <div>
+            <label for="nik">NIK:</label>
+            <input type="text" id="nik" name="nik" required />
+          </div>
+          <div>
+            <label for="email">Alamat Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div>
+            <label for="tempat">Tempat Tanggal Lahir:</label>
+            <input type="text" id="tempat" name="tempat" required />
+            <input type="date" id="tanggal" name="tanggal" required />
+          </div>
+          <div>
+            <label for="alamat">Alamat Lengkap:</label>
+            <textarea id="alamat" name="alamat" required></textarea>
+          </div>
+          <div>
+            <input type="submit" value="Save" />
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
